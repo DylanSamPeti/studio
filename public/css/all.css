@@ -1,0 +1,49 @@
+
+/*
+Color Pallet Settings guide
+
+Links: $chathams-blue
+H1: Mine-Shaft
+H2: Lima
+Text: MineShaft
+Spans, unimportant links and the rest: gray
+
+*/
+@font-face {
+  font-family: 'Roboto';
+  src: 'fonts/roboto/Roboto-Bold'; }
+
+body {
+  background-color: #f0efe7;
+  font-family: 'Roboto'; }
+
+h1, h3, h4, h5, h6, p {
+  color: #222; }
+
+h2 {
+  color: #72AE1E; }
+
+a {
+  color: #13598b;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  text-decoration: none; }
+
+.btn-primary, .btn-danger {
+  width: 100px;
+  padding: 10px;
+  border-radius: 3px;
+  color: #ffffff;
+  font-weight: 100%;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+  border: none; }
+
+.btn-primary {
+  background-color: #8b4513; }
+
+.btn-danger {
+  background-color: #8B131D; }
+
+/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=all.css.map */
