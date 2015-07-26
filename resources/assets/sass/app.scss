@@ -1,2 +1,67 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap"; 
+
+$copper-canyon: #8b4513; 
+$lima: #72AE1E;
+$hacienda: #8B8113;
+$chathams-blue: #13598b;
+$tamarillo: #8B131D;
+$mine-shaft: #222;
+$flamingo: #f14e32;
+$white: #ffffff;
+
+/*
+Color Pallet Settings guide
+
+Links: $chathams-blue
+H1: Mine-Shaft
+H2: Lima
+Text: MineShaft
+Spans, unimportant links and the rest: gray
+
+*/
+
+@font-face {
+	font-family:  'Roboto';
+	src: 'fonts/roboto/Roboto-Bold';
+}
+
+
+body {	
+	background-color: #f0efe7;
+	font-family: 'Roboto';
+}
+
+h1, h3, h4, h5, h6, p{
+	color: $mine-shaft;
+}
+h2{
+	color: $lima;
+}
+a {
+	color: $chathams-blue;
+	font-weight: 900;
+	letter-spacing: 0.8px;
+	text-decoration: none;
+}
+
+.btn-primary, .btn-danger{
+	
+	width: 100px;
+	padding: 10px;
+	border-radius: 3px;
+	color: $white;
+	font-weight: 100%;
+	letter-spacing: 0.8px;
+	font-size: 14px;
+	border: none;
+
+}
+
+.btn-primary{
+	background-color: $copper-canyon;
+}
+
+.btn-danger{
+	background-color: $tamarillo;
+}
 
