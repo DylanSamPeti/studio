@@ -1,3 +1,84 @@
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: #38BF63; }
+
+.title {
+  padding-top: 0; }
+
+.title h1 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 3px; }
+
+.hero-content .title h1 {
+  color: #FCF6F3;
+  font-size: 102px; }
+
+.title h2 {
+  font-size: 72px; }
+
+.subtitle {
+  text-align: center;
+  color: #FCF6F3;
+  letter-spacing: 2px; }
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.about {
+  width: 100%;
+  height: 100%;
+  background-color: white; }
+
+.about .title h2 {
+  color: #5FB0D9;
+  text-align: center;
+  padding: 25px 0 0 0; }
+
+.about .subtitle {
+  color: #026787; }
+
+.about .title h2 span {
+  padding-left: 10px;
+  font-size: 32px;
+  color: #d9895f;
+  letter-spacing: 1.2px;
+  text-transform: uppercase; }
+
+.workspace {
+  padding: 20px 0;
+  background-color: #FCF6F3; }
+
+.item.design h2 {
+  font-size: 72px;
+  color: #565656; }
+
+.item.design {
+  text-align: center; }
+
+.item.design:before {
+  font-family: FontAwesome;
+  content: "\f1fc";
+  font-size: 72px;
+  text-align: center;
+  color: #38BF63; }
+
+.item.design p {
+  font-size: 22px;
+  letter-spacing: 1.2px;
+  color: #DE4945; }
+
+.divider {
+  border: 2px solid #5FB0D9;
+  width: 15%;
+  margin: auto; }
+
 /*
 Color Pallet Settings guide
 
@@ -12,23 +93,130 @@ Spans, unimportant links and the rest: gray
   font-family: 'Roboto';
   src: 'fonts/roboto/Roboto-Bold'; }
 
+@font-face {
+  font-family: 'Marianina';
+  src: url("/fonts/marianina/marianina.ttf"); }
+
 body {
-  background-color: #f0efe7;
-  font-family: 'Roboto'; }
+  font-family: 'Marianina';
+  color: #555555; }
 
 h1, h3, h4, h5, h6, p {
-  color: #222; }
+  color: #555555; }
 
-h2 {
-  color: #72AE1E; }
-
-a {
+a, a:hover, a:active {
   color: #13598b;
-  font-weight: 900;
+  font-weight: 100;
   letter-spacing: 0.8px;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
-.btn-primary, .btn-danger {
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px; }
+
+/**** Header STARTS ****/
+header {
+  width: 100%;
+  background-color: #ffffff;
+  height: 80px; }
+
+nav {
+  position: relative;
+  height: 100%; }
+
+nav #logo {
+  position: absolute;
+  z-index: 2;
+  width: 50px;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+  background-image: url("/images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+nav ul {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 20px; }
+
+nav ul li a, nav ul li a:hover {
+  font-weight: 500;
+  color: #555555; }
+
+/**** Header ENDS ****/
+/**** Helpers STARTS ****/
+.center {
+  text-align: center; }
+
+/**** Helpers ENDS ****/
+.title {
+  font-weight: 100; }
+
+.video-wrap {
+  padding-top: 20px; }
+
+.content-heading {
+  width: 100%;
+  padding: 0;
+  background-color: #fff;
+  margin: 0; }
+
+.container-fluid.video {
+  background-repeat: repeat;
+  padding: 0; }
+
+.video-wrap .row {
+  padding: 10px 0; }
+
+.video-wrap article {
+  position: relative;
+  width: 100%;
+  height: 400px; }
+
+.video-wrap article video {
+  position: absolute;
+  width: auto;
+  max-height: 400px; }
+
+.content-heading .container {
+  padding: 0; }
+
+.col-md-7 {
+  padding: 0; }
+
+.event {
+  padding: 0; }
+
+.event-info {
+  position: relative;
+  border-radius: 5px;
+  height: 400px;
+  background-repeat: repeat; }
+
+.event-info h1 {
+  margin: 0;
+  line-height: 1; }
+
+.event-info h2 {
+  font-size: 21px;
+  border-bottom: 3px solid #f14e32;
+  padding-bottom: 15px;
+  float: left; }
+
+.event-info p {
+  clear: both;
+  padding-top: 15px; }
+
+.event .cta {
+  position: absolute;
+  bottom: 0; }
+
+.btn-primary, .btn-danger, .btn-secondary {
   width: 100px;
   padding: 10px;
   border-radius: 3px;
@@ -39,9 +227,72 @@ a {
   border: none; }
 
 .btn-primary {
-  background-color: #8b4513; }
+  background-color: #13598b;
+  color: #ffffff; }
+
+.btn-secondary {
+  background-color: #f14e32;
+  color: #ffffff; }
 
 .btn-danger {
-  background-color: #8B131D; }
+  background-color: #2d2d2d; }
+
+/**** Banner STARTS ****/
+.banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: #f14e32 url("/images/boiler-room.jpg") no-repeat center center;
+  background-size: cover; }
+
+.banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background-color: #f14e32; }
+
+.banner .banner-content {
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%); }
+
+.banner .title, .banner .description {
+  color: #ffffff;
+  line-height: 1;
+  font-weight: 400; }
+
+.banner .description {
+  font-size: 21px;
+  text-transform: uppercase; }
+
+/**** Banner ENDS ****/
+.video-thumb {
+  width: 100%;
+  height: 200;
+  background-size: cover;
+  background-position: center center; }
+
+.featured {
+  margin-top: 50px; }
+
+.row.featured-videos {
+  margin-bottom: 40px; }
+
+.content-box h4 {
+  padding: 20px 0 14px;
+  margin: 0; }
+
+.content-box p {
+  font-weight: 100;
+  color: #9A9A9A; }
+
+.video .title {
+  font-weight: 500; }
 
 /*# sourceMappingURL=app.css.map */
