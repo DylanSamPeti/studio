@@ -21,6 +21,7 @@
 </div>
 
 @include('design')
+@include('marketing')
 		
 	
 
