@@ -3,25 +3,24 @@
 
 <div class="background">
 
+   <section>
+    <div class="container">
+    
+     <div class="col-md-4 col-md-offset-3 boxed">
+       
+       <h1 class="header">D y l a n <hr></h1>
 
-<div class="container">
+       <ul class="menu">
+       	<li><h2><a href="/projects/interactive-video">Projects</a></h2></li>
+        <li><h2><a href="http://levellounge.tumblr.com/" >Follow</a></h2></li>
+       </ul>
+       </div>
 
- <div class="hero-content">
-	<div class="title">
-		<h1>ONTOLABS</h1>
-	</div>
-
-	<div class="subtitle">
-		<h2>FOR A TAILORED DIGITAL PRESENSE</h2>
-	</div>
- </div>
+       </div>
+   </section>
 
 </div>
 
-</div>
-
-@include('design')
-@include('marketing')
 		
 	
 
