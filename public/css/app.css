@@ -6027,8 +6027,8 @@ hr {
   background-color: #df4930; }
 
 .boxed {
-  position: absolute;
-  top: 20%; }
+  position: relative;
+  margin: 0 auto; }
 
 .header {
   font-size: 94px;
