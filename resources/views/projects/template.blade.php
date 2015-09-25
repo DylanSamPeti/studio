@@ -2,12 +2,14 @@
 
 
 <div class="blog">
-    <div class="container">
+   
      
       <div class="menu">
-    	<div><h1 class="logo"><a href="/">DYLAN</a></h1></div>
+       <div class="container">
+    	<div><h1 class="logo">DYLAN PETi</h1></div>
+    	</div>
       </div>
-
+ <div class="container">
 
 
 

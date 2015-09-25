@@ -6,13 +6,13 @@
    <section>
     <div class="container">
     
-     <div class="boxed">
+     <div class="header">
        
-       <h1 class="header">D y l a n <hr></h1>
+       <h1 class="header-title">DYLAN PETi</h1>
+       <h2 class="header-subtitle">CONCEPTUAL  DESiGN</h2>
 
        <ul class="menu">
-       	<li><h2><a href="/projects/interactive-video">Projects</a></h2></li>
-        <li><h2><a href="http://levellounge.tumblr.com/" >Follow</a></h2></li>
+
        </ul>
        </div>
 
