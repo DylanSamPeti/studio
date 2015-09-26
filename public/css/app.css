@@ -6158,7 +6158,8 @@ header .header-logo {
   padding: 0; }
 
 .post {
-  height: 300px; }
+  height: auto;
+  padding-bottom: 40px; }
 
 .title {
   padding: 40px 0 0 0; }
@@ -6176,30 +6177,38 @@ header .header-logo {
   padding: 0;
   text-transform: capitalize;
   letter-spacing: 1px;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 18px; }
 
 .post-image {
   position: relative;
   height: 200px;
   width: 100%; }
 
-.post div {
-  padding-left: 0; }
-
 .post-image {
-  background-image: url("/images/cameras.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 15%;
   background-size: cover; }
+
+.archieve-post .post-image-icon, .archieve-post .post-image-overlay {
+  height: 200px; }
+
+.single-post .post-image-icon, .single-post .post-image-overlay, .single-post .post-image {
+  height: 400px; }
+
+.single-post .post-image {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.single-post p {
+  font-size: 18px; }
 
 .post-image-icon {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 200px;
-  background-image: url("/images/video-man.png");
   background-size: 17%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -6211,13 +6220,15 @@ header .header-logo {
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
-  height: 200px;
   z-index: 1; }
 
 .post-title {
   font-size: 56px;
   padding: 0;
   color: #616161; }
+
+.post-date-box {
+  float: right; }
 
 .post-date {
   float: right;
@@ -6226,8 +6237,24 @@ header .header-logo {
   color: #616161; }
 
 .post-tags {
-  color: #2fd1e6;
-  font-size: 18px; }
+  color: #2fd1e6; }
+
+.post-tags h5 {
+  display: inline-block;
+  font-size: 24px;
+  border-right: 1px solid #616161;
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: pointer; }
+
+.post-tags h5:hover {
+  color: #00CDE6; }
+
+.post-tags h5:first-child {
+  padding-left: 0; }
+
+.post-tags h5:last-child {
+  border-right: none; }
 
 .post-content {
   padding-top: 15px; }
@@ -6236,10 +6263,10 @@ header .header-logo {
   margin-top: 15px;
   box-shadow: none; }
 
-.btn-primary, .btn-primary:hover {
+.btn-primary {
   color: #f56857;
   font-family: 'Lato';
-  border: 1px solid #f56857 !important;
+  border: 2px solid #f56857;
   background-color: transparent;
   padding: 10px;
   border-color: #f56857;
@@ -6249,11 +6276,31 @@ header .header-logo {
   border-radius: 5px;
   cursor: pointer; }
 
+.btn-primary:active, .btn-primary:link, .btn-primary:visited {
+  background-color: white !important;
+  color: #f56857; }
+
+.btn-primary:hover {
+  border: 2px solid #de3f39;
+  color: #de3f39;
+  -webkit-transition-duration: 0.2s; }
+
 .form {
   font-family: 'lato'; }
 
 .form input {
   height: 40px;
   padding-left: 15px; }
+
+.flash-message {
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: 'Lato';
+  padding: 10px 0; }
+
+.flash-tick {
+  border: 1px solid #4dc247;
+  padding: 5px;
+  border-radius: 5px; }
 
 /*# sourceMappingURL=app.css.map */

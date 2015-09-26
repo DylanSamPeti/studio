@@ -1,4 +1,4 @@
-@extends('projects/header')
+@extends('/projects/header')
 
 @section('content')
 
@@ -19,6 +19,7 @@
 
 @include('errors.list')
 
+</div>
 </div>
 
 @stop

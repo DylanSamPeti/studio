@@ -40,9 +40,9 @@ class Project extends Model
         return $this->belongsTo('App\User');
     }
 
-     public function projectTags()
+     public function tags()
     {
-        return $this->belongsToMany('App\Project');
+        return $this->belongsToMany('App\Tag')->withTimestamps();
     }
 
     /**

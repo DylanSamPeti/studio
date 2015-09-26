@@ -19,8 +19,8 @@ class Tag extends Model
      ];
 
 
-    public function articles()
+    public function projects()
     {
-    	return $this->belongsToMany('App\Article');
+    	return $this->belongsToMany('App\Project');
     }
 }

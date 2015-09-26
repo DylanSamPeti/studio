@@ -39,7 +39,7 @@ class ProjectsController extends Controller
     public function create()
     {
         $tags = Tag::lists('name', 'id');
-        return view('projects.create')->with('tags', $tags);
+        return view('projects.create', compact('tags'));
     }
 
     /**
@@ -63,10 +63,10 @@ class ProjectsController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function show(ProjectRequest $project)
+    public function show(Project $project)
     {
       
-      return view('projects.show')->with('project', $article);
+      return view('projects.show')->with('project', $project);
 
     }
 
@@ -76,9 +76,12 @@ class ProjectsController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function edit($id)
+    public function edit(Project $project)
     {
-        return view('projects.edit');
+
+        $tags = Tag::lists('name', 'id');
+
+        return view('projects.edit', compact('project', 'tags'));
     }
 
     /**
@@ -91,6 +94,9 @@ class ProjectsController extends Controller
     public function update(Project $project, ProjectRequest $request)
     {
         $project->update($request->all());
+
+        $this->syncTags($project, $request->input('tag_list'));
+
         return redirect('projects');
     }
 
@@ -105,6 +111,15 @@ class ProjectsController extends Controller
         //
     }
 
+
+
+    private function syncTags(Project $project, array $tags)
+   
+    {
+        $project->tags()->sync($tags);
+
+    }   
+
     /**
      * Create a new project
      *
@@ -117,6 +132,8 @@ class ProjectsController extends Controller
     {
             
     $project = Auth::user()->projects()->create($request->all());
+
+    $this->syncTags($project, $request->input('tag_list'));
 
     return $project;
 
