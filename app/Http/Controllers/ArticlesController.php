@@ -13,6 +13,7 @@ use Auth;
 
 
 
+
 class ArticlesController extends Controller
 {
 	public function index(){
@@ -44,7 +45,7 @@ class ArticlesController extends Controller
 
         return redirect('articles');
    
-	}
+	}	
 
 	public function edit(Article $article)
 

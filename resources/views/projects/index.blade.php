@@ -4,6 +4,19 @@
 
 <div class="container">
 
+
+@if(count($posts))
+
+  @foreach ($posts as $project)
+
+  <h2>{{ $project->title }}</h2>
+
+  @endforeach
+
+@endif
+
+
+
 	<div class="row">
 		<div class="title">
 			<h1>PROJECTS</h1>

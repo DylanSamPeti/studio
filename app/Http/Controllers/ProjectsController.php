@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Project;
+use App\Tag;
 use App\Http\Requests;
 use Carbon\Carbon;
 use App\Http\Requests\ProjectRequest;
@@ -11,8 +12,14 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Auth;
 
+
 class ProjectsController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['index', 'show']]);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -20,7 +27,8 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-         return view('projects.index');
+        $posts = Project::latest('published_at')->published()->get();
+        return view('projects.index')->with('posts', $posts);
     }
 
     /**
@@ -30,7 +38,8 @@ class ProjectsController extends Controller
      */
     public function create()
     {
-        return view('projects.create');
+        $tags = Tag::lists('name', 'id');
+        return view('projects.create')->with('tags', $tags);
     }
 
     /**
@@ -54,9 +63,11 @@ class ProjectsController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function show($id)
+    public function show(ProjectRequest $project)
     {
-        //
+      
+      return view('projects.show')->with('project', $article);
+
     }
 
     /**
@@ -67,7 +78,7 @@ class ProjectsController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('projects.edit');
     }
 
     /**
@@ -77,9 +88,10 @@ class ProjectsController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(Project $project, ProjectRequest $request)
     {
-        //
+        $project->update($request->all());
+        return redirect('projects');
     }
 
     /**
@@ -104,7 +116,7 @@ class ProjectsController extends Controller
     private function createProject(ProjectRequest $request)
     {
             
-    Auth::user()->projects()->create($request->all());
+    $project = Auth::user()->projects()->create($request->all());
 
     return $project;
 

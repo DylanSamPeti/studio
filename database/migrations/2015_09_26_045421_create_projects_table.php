@@ -17,6 +17,8 @@ class CreateProjectsTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->string('title');
             $table->text('body');
+            $table->text('thumbnail_path');
+            $table->text('thumbnail_icon_path');
             $table->timestamps();
             $table->timestamp('published_at');
 
