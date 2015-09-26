@@ -15,30 +15,32 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/projects/interactive-video', function () {
-    return view('projects/interactive-video');
-});
+// Route::get('/projects/interactive-video', function () {
+//     return view('projects/interactive-video');
+// });
 
-Route::get('projects/interactive-video/level-lounge/proposal', function () {
-    return view('projects/proposal');
-});
+// Route::get('projects/interactive-video/level-lounge/proposal', function () {
+//     return view('projects/proposal');
+// });
 
-Route::get('projects/interactive-video/level-lounge/timeline', function () {
-    return view('projects/timeline');
-});
+// Route::get('projects/interactive-video/level-lounge/timeline', function () {
+//     return view('projects/timeline');
+// });
 
-Route::get('projects/interactive-video/level-lounge/storyboards', function () {
-    return view('projects/storyboards');
-});
+// Route::get('projects/interactive-video/level-lounge/storyboards', function () {
+//     return view('projects/storyboards');
+// });
 
-Route::get('projects/interactive-video/level-lounge/references', function () {
-    return view('projects/references');
-});
+// Route::get('projects/interactive-video/level-lounge/references', function () {
+//     return view('projects/references');
+// });
 
 Route::get('contact', 'PagesController@contact');
 
 // Article routes...
 Route::resource('articles', 'ArticlesController');
+
+Route::resource('projects', 'ProjectsController');
 
 Route::get('admin', ['middleware' => 'manager', function(){
 return 'welcome manager';
