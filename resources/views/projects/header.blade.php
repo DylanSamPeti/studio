@@ -26,9 +26,9 @@
 
 <header>
 	<div class="container">
-	<div class="row">
+
 		<h3 class="header-logo">D Y L A N  &nbsp; P E T i</h3>
-	</div>
+
 	</div>
 </header>
 	@yield('content')

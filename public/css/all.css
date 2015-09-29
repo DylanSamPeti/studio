@@ -6047,9 +6047,22 @@ h1.header-title {
 
 h2.header-subtitle {
   color: #444444;
-  padding: 0;
+  padding: 10px;
   margin: 0;
-  letter-spacing: 7px; }
+  letter-spacing: 7px;
+  border: 3px solid #444444;
+  border-radius: 5px;
+  width: auto;
+  float: left;
+  cursor: pointer;
+  transition: background-color 1s ease; }
+
+h2.header-subtitle a {
+  color: #444444; }
+
+h2.header-subtitle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer; }
 
 hr {
   max-width: 60%; }
@@ -6140,7 +6153,7 @@ footer {
   bottom: 0;
   height: 70px;
   width: 100%;
-  background-color: #ccc;
+  background-color: #f4f4f4;
   margin-top: 80px; }
 
 .sidebar i {
@@ -6156,7 +6169,8 @@ header {
 
 header .header-logo {
   margin: 30px 0 0 0;
-  padding: 0; }
+  padding: 0;
+  color: white; }
 
 .post {
   height: auto;
@@ -6195,7 +6209,7 @@ header .header-logo {
 .single-post-banner-title h1, .single-post-banner-title h3 {
   position: relative;
   z-index: 1;
-  color: #F9432E;
+  color: #f4f4f4;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -6219,7 +6233,7 @@ header .header-logo {
   z-index: -1; }
 
 .single-post .post-image {
-  background-color: #eee;
+  background-color: #2fd1e6;
   height: 300px;
   margin-bottom: 40px; }
 
@@ -6283,29 +6297,32 @@ header .header-logo {
 
 .post-readmore {
   margin-top: 15px;
-  box-shadow: none; }
+  box-shadow: none;
+  float: left; }
+
+.btn-primary:hover {
+  background-color: rgba(0, 0, 0, 0.1); }
 
 .btn-primary {
   color: #f56857;
   font-family: 'Lato';
   border: 2px solid #f56857;
-  background-color: transparent;
   padding: 10px;
   border-color: #f56857;
   background-image: none;
   text-shadow: none;
   box-shadow: none;
   border-radius: 5px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: background-color 1s ease;
+  background-color: white; }
 
 .btn-primary:active, .btn-primary:link, .btn-primary:visited {
-  background-color: white !important;
   color: #f56857; }
 
 .btn-primary:hover {
-  border: 2px solid #de3f39;
-  color: #de3f39;
-  -webkit-transition-duration: 0.2s; }
+  border: 2px solid #616161;
+  color: #616161; }
 
 .form {
   font-family: 'lato'; }

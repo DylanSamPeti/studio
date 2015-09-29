@@ -5,7 +5,7 @@
 
 <div class="row single-post">
 
-<div class="post-image">
+<div class="post-image" style="background-image: url('{{ Request::root() . $project->thumbnail_path }}')">
 	<div class="single-post-banner-title">
 		<h1>{{ $project->title }}</h1>
 		<h3>A Transmedia Project</h3>

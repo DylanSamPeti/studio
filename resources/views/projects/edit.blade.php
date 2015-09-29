@@ -1,4 +1,4 @@
-@extends('/projects/header');
+@extends('/projects/header')
 
 @section('content')
 <div class="container">
