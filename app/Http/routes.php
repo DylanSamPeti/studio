@@ -21,6 +21,10 @@ Route::get('contact', 'PagesController@contact');
 // Article routes...
 Route::resource('articles', 'ArticlesController');
 
+Route::get('/about', function(){
+  return view('landing-pages/about');
+});
+
 Route::resource('projects', 'ProjectsController');
 
 Route::get('admin', ['middleware' => 'manager', function(){

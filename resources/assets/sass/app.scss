@@ -29,7 +29,7 @@ src: local('Avenir Next LT Pro Demi Condensed'), url('/fonts/avenir/AvenirNextLT
 
 body {
 	font-family: 'Marianina', serif;
-	color: white;
+	color: $black;
 
 }
 ul{
@@ -83,6 +83,7 @@ h2.header-subtitle {
 	padding: 0;
 	margin: 0;
 	letter-spacing: 7px;
+	border: 1px solid $orange;
 }
 
 hr{
@@ -262,14 +263,37 @@ header .header-logo {
 
 } 
 
+.single-post-banner-title h1, .single-post-banner-title h3 {
+	position: relative;
+	z-index: 1;
+	color: #F9432E;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+
+.single-post-banner-title h1{
+	font-size: 94px;
+    transform: translateY(30%);
+}
+
+.single-post-banner-title h3 {
+	font-size: 32px;
+	transform: translateY(70%);
+}
+
 .archieve-post .post-image-icon, .archieve-post .post-image-overlay{
     height: 200px;
 }
-.single-post .post-image-icon, .single-post .post-image-overlay, .single-post .post-image {
-	height: 400px;
+.single-post .post-image-icon, .single-post .post-image-overlay {
+	height: 300px;
+	z-index: -1;
 }
 .single-post .post-image{
-	margin-top: 40px;
+	background-color: #eee;
+	height: 300px;
 	margin-bottom: 40px;
 }
 .single-post p {

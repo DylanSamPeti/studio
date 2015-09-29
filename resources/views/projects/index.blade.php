@@ -54,7 +54,7 @@
                 <div class="row">
 				  <div class="row post-content">
 				    <div class="col-md-12">
-				    	<p>{{ $project->body }}</p>
+				    	<p>{!! ($project->body) !!}</p>
 				    </div>
 				  </div>
 				</div>
