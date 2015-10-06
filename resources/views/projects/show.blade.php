@@ -21,7 +21,9 @@
     <div class="row col-md-10 col-md-offset-1">
 	    <div class="row">
 				  
-		
+		    <div class="col-md-6">
+		    	<h2 class="post-title">OVERVIEW</h2>
+		    </div>
 		    
 		    <div class="col-md-6 post-date-box">
 		      <div class="post-date">{{ date('d-m-Y') }}</div>
@@ -42,7 +44,7 @@
 		   <div class="row">
 				  <div class="post-content">
 				    <div class="col-md-12">
-				    	<p>{!! $project->body !!}</p>
+				      {!! $project->body !!}
 				    
 				    </div>
 				  </div>
@@ -56,5 +58,5 @@
  
 
 
-
+@include('projects/footer')
 @stop

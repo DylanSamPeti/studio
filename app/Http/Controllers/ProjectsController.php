@@ -52,7 +52,7 @@ class ProjectsController extends Controller
     {
         $this->createProject($request);
 
-        \Session::flash('flash_message', "your project has been submitted");
+        \Session::flash('flash_message', "Your project has been submitted");
 
         return redirect('projects');
     }
@@ -96,6 +96,8 @@ class ProjectsController extends Controller
         $project->update($request->all());
 
         $this->syncTags($project, $request->input('tag_list'));
+
+        \Session::flash('flash_message', "Your project has been updated");
 
         return redirect('projects');
     }

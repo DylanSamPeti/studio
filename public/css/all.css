@@ -6342,5 +6342,12 @@ header .header-logo {
   padding: 5px;
   border-radius: 5px; }
 
+.link {
+  color: #f56857; }
+
+.link h5 {
+  font-family: 'Lato';
+  font-size: 24px; }
+
 /*# sourceMappingURL=app.css.map */
 /*# sourceMappingURL=all.css.map */
