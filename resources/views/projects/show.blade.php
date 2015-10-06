@@ -8,7 +8,7 @@
 <div class="post-image" style="background-image: url('{{ Request::root() . $project->thumbnail_path }}')">
 	<div class="single-post-banner-title">
 		<h1>{{ $project->title }}</h1>
-		<h3>A Transmedia Project</h3>
+		<h3>An Interactive Film Project</h3>
    		<div class="post-image-overlay"></div>
 	</div>
 </div>
