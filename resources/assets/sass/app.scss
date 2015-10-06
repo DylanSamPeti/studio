@@ -260,22 +260,15 @@ header .header-logo {
 	font-size: 18px;
 }
 
+
+
 .post-image {
 	position: relative;
 	height: 200px;
 	width: 100%;
-
-}
-
-
-
-.post-image {
-	
-	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: 15%;
     background-size: cover;
-
 } 
 
 .single-post-banner-title h1, .single-post-banner-title h3 {
@@ -328,7 +321,7 @@ header .header-logo {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.4);
 	width: 100%;
 	z-index: 1;
 }

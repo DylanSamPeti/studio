@@ -6197,10 +6197,7 @@ header .header-logo {
 .post-image {
   position: relative;
   height: 200px;
-  width: 100%; }
-
-.post-image {
-  background-position: 50% 50%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: 15%;
   background-size: cover; }
@@ -6253,7 +6250,7 @@ header .header-logo {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   z-index: 1; }
 
