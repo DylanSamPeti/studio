@@ -57,7 +57,7 @@
            
 				  <div class="row post-content">
 				    <div class="col-md-12">
-				    	<p>{!! str_limit($project->body, 350) !!}</p>
+				    	<!--<p>{!! str_limit($project->body, 350) !!}</p>-->
 				    </div>
 				  </div>
 			

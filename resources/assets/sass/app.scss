@@ -260,18 +260,46 @@ header .header-logo {
 	font-size: 18px;
 }
 
-
-
 .post-image {
 	position: relative;
 	height: 200px;
 	width: 100%;
 	background-repeat: no-repeat;
-	background-size: 15%;
+	background-position: 0 25%;
     background-size: cover;
 } 
+.single-post-banner-title {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+	cursor: pointer;
+	height: 100%;
+}
 
-.single-post-banner-title h1, .single-post-banner-title h3 {
+.post-image-strip {
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 10px 0;
+
+}
+
+.post-image-strip h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 82px;
+	border-bottom: 3px solid #fff;
+	border-top: 3px solid #fff;
+	padding: 10px 0;
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+
+}
+.single-post-banner-title h1, .single-post-banner-title h3, .single-post-banner-title .fa-play {
 	position: relative;
 	z-index: 1;
 	color: #f4f4f4;
@@ -279,12 +307,13 @@ header .header-logo {
 	margin: 0;
 	text-align: center;
 	text-transform: uppercase;
+    
 
 }
 
 .single-post-banner-title h1{
 	font-size: 94px;
-    transform: translateY(30%);
+    transform: translateY(50%);
 }
 
 .single-post-banner-title h3 {
@@ -292,16 +321,72 @@ header .header-logo {
 	transform: translateY(70%);
 }
 
+.single-post-banner-title .fa-play {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	font-size: 42px;
+	padding: 20px 40px 20px 40px !important;
+	border: 5px solid;
+	border-color: #fff;
+	border-radius: 15px;
+	transform: translateX(-50%);
+	transition: border-color 1s ease,  color 1s ease;
+}
+
+
+
+.modal {
+	padding: 0;
+	margin: 0;
+}
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    position: absolute;
+    right: 10px;
+    font-size: 72px;
+    color: #fff;
+    z-index: 1;
+    height: auto;
+    margin: 0;
+    top: 0;
+}
+.featured-video, .modal, .modal.fade.in {
+	width: 50% !important;
+	height: 60%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.modal-content {
+	height: 100%;
+}
+.featured-video iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.single-post-banner-title .fa-play:hover {
+	color: $orange;
+	cursor: pointer;
+	border-color: $orange;
+}
+
 .archieve-post .post-image-icon, .archieve-post .post-image-overlay{
     height: 200px;
 }
+
 .single-post .post-image-icon, .single-post .post-image-overlay {
-	height: 300px;
-	z-index: -1;
+	height: 100%;
+	z-index: 1;
 }
+
 .single-post .post-image{
 	background-color: $blue;
-	height: 300px;
+	height: 400px;
 	margin-bottom: 40px;
 }
 .single-post p {
@@ -323,7 +408,9 @@ header .header-logo {
 	left: 0;
 	background-color: rgba(0,0,0,0.4);
 	width: 100%;
+	height: 100%;
 	z-index: 1;
+	display: none;
 }
 
 .post-title {
