@@ -30,7 +30,7 @@
 	    <div class="row">
 				  
 		    <div class="col-md-6">
-		    	<h2 class="post-title">GAIA INTERACTIVE</h2>
+		    	<h2 class="post-title"> {!! $project->title !!}</h2>
 		    </div>
 		    
 		    <div class="col-md-6 post-date-box">
