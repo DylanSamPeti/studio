@@ -19,21 +19,18 @@
    <div class="row single-post">
    
       <div class="post-image" style="background-image: url('{{ Request::root() . $project->thumbnail_path }}')">
-      <div class="post-image-strip"><h1>{{ $project->title }}</h1></div>
-      	<div class="single-post-banner-title">
-      		
-      		
-           </div>
+
+   
          		<div class="post-image-overlay"></div>
       </div>
    </div>
 
- <div class="container">
+ <div class="container single">
     <div class="row col-md-10 col-md-offset-1">
 	    <div class="row">
 				  
 		    <div class="col-md-6">
-		    	<h2 class="post-title">GAIA EXPERIMENTATAL VIDEO</h2>
+		    	<h2 class="post-title">GAIA INTERACTIVE</h2>
 		    </div>
 		    
 		    <div class="col-md-6 post-date-box">
